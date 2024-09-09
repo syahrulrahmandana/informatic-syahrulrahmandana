@@ -29,7 +29,6 @@ body{
 }
 .navbar{
   position: fixed;
-
   justify-content: space-between;
   width:100%;
   height: 80px;
@@ -129,4 +128,56 @@ body{
     justify-content: center;
   }
 
- 
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px 5%; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  main {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    padding-inline: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    margin: 1rem 0; /* Add margin to space out cards */
+  }
+
+  .profile-image {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px;
+  }
+
+  .info-table .value .titikDua {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+
+  .text-awal {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 14px; /* Further adjust font size for very small screens */
+  }
+
+  main {
+    padding-inline: 1rem; /* Further adjust padding for very small screens */
+  }
+
+  .card {
+    margin: 0.5rem 0; /* Further adjust margin */
+  }
+
+  .profile-image {
+    width: 60px; /* Adjust image size further */
+    height: 60px;
+  }
+
+  .text-awal {
+    font-size: 12px; /* Further adjust font size */
+  }
+}

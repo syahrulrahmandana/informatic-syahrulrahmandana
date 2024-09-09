@@ -82,5 +82,52 @@ span{
 }
 
 
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .wrap {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px 5%; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+  }
 
+  .awal {
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 2rem; /* Adjust padding for smaller screens */
+  }
 
+  .awal .image img {
+    width: 80vw; /* Make the image responsive */
+    margin-top: 20px;
+  }
+
+  .tombol li {
+    padding: 10px;
+  }
+
+  .text-awal {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    font-size: 14px; /* Further adjust font size for very small screens */
+  }
+
+  .awal {
+    padding-inline: 1rem; /* Adjust padding further for very small screens */
+  }
+
+  .awal .image img {
+    width: 90vw; /* Make the image even more responsive */
+  }
+
+  .tombol li {
+    padding: 8px;
+  }
+
+  .text-awal {
+    font-size: 12px; /* Further adjust font size */
+  }
+}
